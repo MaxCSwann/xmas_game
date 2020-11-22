@@ -113,6 +113,7 @@ function Santa(){
 	this.clicked = function(){
         console.log("santa clicked");
         counter++;
+        this.randomPos();
         //could trigger animation here or something
 	}
 }
