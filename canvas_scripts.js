@@ -1,3 +1,15 @@
+// optimisations and todos
+// currently all painting is done on the same canvas, might be able to improve
+// performance by drawing santa to a seperate canvas layered on top of xray so can only draw the xray once
+// this would quite likely fuck up the mask though
+// 
+// also gif versions of this would be difficult apparently you have to disect each frame 
+// from the gif and display one after the other in request animation frame
+// sprite sheets could improve performance but not ideal especially for the larger background Elements
+// gifler library http://themadcreator.github.io/gifler/ might be able to do this for us http://konvajs-doc.bluehymn.com/docs/sandbox/GIF_On_Canvas.html
+
+
+
 var imgs = {};
 var canvas = document.getElementById('canvas');
 canvas.width = document.body.clientWidth;
